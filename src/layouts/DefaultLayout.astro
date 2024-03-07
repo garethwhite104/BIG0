@@ -21,7 +21,7 @@ const {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- favicon -->
-    <link rel="icon" type="image/svg+xml" href="/bigcorfavicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <SiteMeta
       title={title}
@@ -34,9 +34,11 @@ const {
     />
   </head>
   <body>
-      <main id="main-content" transition:animate="fade">
+    <Header />
+    <main id="main-content" transition:animate="fade">
       <slot />
     </main>
+    <Footer />
     <style lang="scss" is:global>
       // theme settings
       :root {
