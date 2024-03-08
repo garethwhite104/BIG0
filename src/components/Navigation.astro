@@ -5,8 +5,8 @@ import { Image } from 'astro:assets'
 import logo from '../assets/img/bigcorlogo.svg'
 ---
 
-<div id="main-navigation" class="is-desktop py-8">
-  <div class="container border-2 border-orange-500 rounded-lg ">
+<div id="main-navigation" class="is-desktop">
+  <div class="container">
     <a href="/" class="flex items-center gap-2 !no-underline">
       <Image src={logo} alt="Logo" width="85" height="75" />
       <span class="font-bold m-4">BOREALIS Ingenuity Group <br>Corporation</span>
@@ -291,7 +291,7 @@ import logo from '../assets/img/bigcorlogo.svg'
         .has-dropdown > button:focus {
           text-decoration: underline;
           text-decoration-thickness: 1px;
-          text-decoration-style: wavy;
+          text-decoration-style: double;
           text-underline-offset: 7px;
         }
 
