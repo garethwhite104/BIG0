@@ -39,7 +39,7 @@ const {
     <div class="grid grid-row-3 h-screen">  
     <Header />
     <!-- todo  fix animate gmw-->
-    <main id="main-content" transition:animate="fade" class="scroll-auto">
+    <main id="main-content" transition:animate="fade">
       <slot />
     </main>
     <Footer />
@@ -79,7 +79,7 @@ const {
       html,
       body {
         height: 100%;
-        // overflow-x: hidden;
+        // overflow-x: hidden; SCROLL BOX GMW
       }
 
       body {
@@ -90,7 +90,7 @@ const {
 
         main {
           flex: 1 0 auto;
-          overflow-y: scroll;
+          overflow-y: scroll;/* SCROLL BOX GMW */
         }
 
         footer {
