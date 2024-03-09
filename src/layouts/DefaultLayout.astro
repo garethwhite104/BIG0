@@ -36,12 +36,11 @@ const {
     />
   </head>
   <body>
-    <div class="grid grid-cols-2 gap-2 px-2"> 
-    <div class="grid grid-row-3 h-screen">
+    <div class="grid grid-cols-2 h-screen gap-2 p-2"> 
+    <div class="grid grid-row-3">
     <Border> 
       <Header />
     </Border> 
-    <!-- todo  fix animate gmw-->
     <main id="main-content" transition:animate="fade">
       <slot />
     </main>
@@ -84,7 +83,7 @@ const {
       // sticky footer on low content pages
       html,
       body {
-        height: 100%;
+        // height: 100%;
         // overflow-x: hidden; SCROLL BOX GMW
       }
 
