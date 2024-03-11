@@ -38,7 +38,7 @@ const {
   <body>
     <div class="grid grid-cols-2 gap-2 p-2"> 
     <div class="grid grid-row-3 h-screen">
-    <Border> 
+    <Border>  
       <Header />
     </Border> 
     <main id="main-content" transition:animate="fade">
@@ -84,7 +84,7 @@ const {
       html,
       body {
         box-sizing: border-box;
-        height: 90vh;
+        height: 100vh;
         // overflow-x: hidden; SCROLL BOX GMW
       }
 
@@ -96,7 +96,7 @@ const {
 
         main {
           flex: 1 0 auto;
-          overflow-y: scroll;/* SCROLL BOX GMW */
+          overflow-y: auto;/* SCROLL BOX GMW */
         }
 
         footer {
