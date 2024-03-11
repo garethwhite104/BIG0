@@ -4,7 +4,7 @@ import { SkipLinks } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 ---
 
-<header>
+
   <SkipLinks />
   <Navigation>
     <li class="menu-item">
@@ -39,14 +39,13 @@ import { Icon } from 'astro-icon/components'
       </a>
     </li> -->
   </Navigation>
-</header>
 
 <style lang="scss" is:global>
   @use '../assets/scss/base/outline' as *;
 
   header {
     .type-icon a {
-      display: block;
+      display: inline-block;
 
       [data-icon] {
         height: auto;

@@ -5,11 +5,13 @@ import Border from './Border.astro'
 const { icon = 'mdi:rocket', title = 'Default Title' } = Astro.props
 ---
 <Border>
+  <div class="min-h-80"> <!-- added this GMW to change nav card height -->
   <Icon name={icon} />
     <h3>{title}</h3>
     <p>
       <slot>default feature content</slot>
-    </p>  
+    </p> 
+  </div> 
 </Border>
 
 
